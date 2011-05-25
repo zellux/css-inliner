@@ -2,8 +2,8 @@ blockquote.blockquote_class span { color: purple; rule: 1; }
 blockquote p.p_class span { color: red; rule: 2; }
 blockquote span { color: green; rule: 3; }
 blockquote p span { color: yellow; rule: 4; }
-span.span_class { color: blue; height: 10px; }
-span.span_class_2 { color: gray }
-blockquote { font-style: italic }
-p span { color: magenta }
-span { font-weight: bolder }
+span.span_class { color: blue; height: 10px; rule: 5; }
+span.span_class_2 { color: gray; rule: 6; }
+blockquote { font-style: italic; rule: 7; }
+p span { color: magenta; rule: 8; }
+span { font-weight: bolder; rule: 9; }
