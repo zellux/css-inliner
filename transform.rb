@@ -16,7 +16,7 @@ parser = CssParser::Parser.new
 parser.load_file!('style.css')
 parser.each_selector {|s, decl, spec| selectors << [s, decl, spec] }
 
-selectors = selectors.sort_by {|x| x[2] }
+selectors = selectors.sort_by.with_index {|x, i| [x[2], i] }
 doc = Nokogiri::HTML(File.open("origin.html"))
 
 css = {}
